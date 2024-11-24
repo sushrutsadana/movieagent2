@@ -1,0 +1,8 @@
+openai
+llama-index
+supabase
+supabase
+requests
+python-dotenv
+streamlit
+python-telegram-bot
