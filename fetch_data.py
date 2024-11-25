@@ -38,7 +38,7 @@ def fetch_cinemas():
 
 def fetch_showtimes_for_movie(film_id=None, date=None, time_filter=None):
     supabase = initialize_supabase()
-    query = supabase.table("showtimes").select("""
+    query = supabase.table("Showtimes").select("""
         id,
         film_id,
         cinema_id,
