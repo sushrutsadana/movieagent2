@@ -12,6 +12,14 @@
    ```bash
    python llama_index_builder.py
    ```
+5. Launch the terminal chatbot:
+   ```bash
+   python terminal_chatbot.py
+   ```
+6. Launch the Telegram bot:
+   ```bash
+   python telegram_bot.py
+   ```
 
 ## Important Notes
 - Never commit the `.env` file
