@@ -36,8 +36,26 @@ def fetch_cinemas():
         distance
     """).execute().data
 
-def fetch_showtimes_for_movie(film_id=None, date=None, time_filter=None):
+def fetch_movie_by_name(movie_name):
     supabase = initialize_supabase()
+    result = supabase.table("movies").select("*").ilike("film_name", f"%{movie_name}%").execute()
+    if result.data:
+        return result.data[0]
+    return None
+
+def fetch_showtimes_for_movie(movie_name=None, date=None, time_filter=None):
+    supabase = initialize_supabase()
+    
+    # First find the movie ID
+    if movie_name:
+        movie = fetch_movie_by_name(movie_name)
+        if not movie:
+            return []
+        film_id = movie["id"]
+    else:
+        return []
+
+    # Then query showtimes
     query = supabase.table("Showtimes").select("""
         id,
         film_id,
@@ -45,10 +63,10 @@ def fetch_showtimes_for_movie(film_id=None, date=None, time_filter=None):
         start_time,
         end_time
     """)
-    if film_id:
-        query = query.eq("film_id", film_id)
+    
+    query = query.eq("film_id", film_id)
+    
     if date:
-        query = query.eq("date", date.strftime("%Y-%m-%d"))  # Assumes date is a datetime object
-    if time_filter:
-        query = query.gte("start_time", time_filter.strftime("%H:%M:%S"))  # Assuming time_filter is a datetime object specifying the time
+        query = query.eq("date", date.strftime("%Y-%m-%d"))
+    
     return query.execute().data

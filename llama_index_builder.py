@@ -2,14 +2,18 @@ from dotenv import load_dotenv
 import os
 import pickle
 from fetch_data import fetch_movies, fetch_cinemas, fetch_showtimes_for_movie
-from llama_index.core import Document
-from llama_index.core.indices.vector_store import VectorStoreIndex
+from llama_index.core import VectorStoreIndex, Document, Settings
+from llama_index.llms.openai import OpenAI
+
 
 load_dotenv()  # Load environment variables from .env file
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # Get the API key
 
 def create_index():
     """Create index without storing any sensitive data."""
+    # Initialize OpenAI LLM
+    Settings.llm = OpenAI(model="gpt-4-turbo", api_key=OPENAI_API_KEY)
+    
     # Fetch data from the database
     movies = fetch_movies()
     cinemas = fetch_cinemas()
@@ -36,8 +40,7 @@ def create_index():
     index = VectorStoreIndex.from_documents(documents)
     
     # Save the index
-    with open("movie_index.pkl", "wb") as f:
-        pickle.dump(index, f)
+    index.storage_context.persist()
     print("Index saved successfully.")
 
 
