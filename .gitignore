@@ -22,6 +22,7 @@ ENV/
 *.sqlite3
 
 # Model files and data
+movie_index/
 movie_index.pkl
 movie_index.json
 *.pkl

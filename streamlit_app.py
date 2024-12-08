@@ -11,7 +11,7 @@ st.set_page_config(
     layout="centered"
 )
 
-nodes = load_index_from_disk("movie_index.pkl")
+nodes = load_index_from_disk("./movie_index")
 
 
 # Custom CSS for modern gradient background and styling
