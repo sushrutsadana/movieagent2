@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from omdb_integration import fetch_movie_details
 from booking_integration import book_tickets, get_showtime_record
 from llama_index.llms.openai import OpenAI
-from llama_index.core import Settings, get_response_synthesizer
+from llama_index.core import Settings, PromptTemplate
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core.workflow import (
@@ -14,10 +14,23 @@ from llama_index.core.workflow import (
     step,
     Event,
 )
+from pydantic import BaseModel
 from llama_index_builder import load_index_from_disk
 import logging
 import json
-from typing import Union
+from typing import Union, Optional
+
+# Define your Pydantic model for structured output
+class MovieIntent(BaseModel):
+    intent: str
+    movie_name: Optional[str] = None
+    city: Optional[str] = None
+    locality: Optional[str] = None
+    cinema_name: Optional[str] = None
+    showtime_str: Optional[str] = None
+    genre: Optional[str] = None
+    time_context: Optional[str] = None
+    num_tickets: Optional[int] = None
 
 # Define event types
 class MovieReviewEvent(Event):
@@ -32,101 +45,60 @@ class CinemaLocationEvent(Event):
 class BookTicketsEvent(Event):
     pass
 
-# Set up logging
+# Load environment variables
 logging.basicConfig(level=logging.INFO)
 
-# Load environment variables
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Initialize OpenAI LLM
-Settings.llm = OpenAI(model="gpt-4", api_key=os.getenv("OPENAI_API_KEY"))
-llm = Settings.llm
-
-# Load the LlamaIndex
+# Initialize OpenAI LLM and index
 index = load_index_from_disk("./movie_index")
-if index is None:
-    raise RuntimeError(
-        "Failed to load index. Please ensure you've generated the index first by running: "
-        "python llama_index_builder.py"
-    )
+retriever = VectorIndexRetriever(index=index, similarity_top_k=5)
+query_engine = RetrieverQueryEngine(retriever=retriever)
 
-retriever = VectorIndexRetriever(
-    index=index,
-    similarity_top_k=5,
-)
+# Define the prompt template for structured prediction
+template_str = """
+You are an AI assistant that extracts movie-related intents and details from user queries.
 
-response_synthesizer = get_response_synthesizer(
-    response_mode="tree_summarize",
-)
+Your task:
+- Read the user query.
+- Determine the 'intent' (one of: movie_review, showtimes, cinema_location, book_tickets, or unknown).
+- If the intent is movie_review, try to identify 'movie_name'.
+- If the intent is showtimes or cinema_location or book_tickets, try to identify 'movie_name', 'city', 'locality', 'cinema_name', 'showtime_str', 'genre', 'time_context', and 'num_tickets' as applicable.
+- If a field is not applicable or not provided, leave it as null.
+- Return the result as a JSON object strictly matching the MovieIntent schema. Do not include extra fields.
 
-query_engine = RetrieverQueryEngine(
-    retriever=retriever,
-    response_synthesizer=response_synthesizer,
-)
+User query: {user_query}
+
+Return a JSON that fits the MovieIntent model.
+"""
+
+# Create the PromptTemplate
+prompt_template = PromptTemplate(template=template_str)
 
 class ChatbotWorkflow(Workflow):
     @step
     async def start(self, event: StartEvent) -> Union[StopEvent, MovieReviewEvent, ShowtimesEvent, CinemaLocationEvent, BookTicketsEvent]:
-        user_query = event.input
         try:
-            # Parse user query using OpenAI
-            response = openai.chat.completions.create(
-                model="gpt-4",
-                messages=[
-                    {
-                         "role": "system",
-                        "content": """
-                        Extract structured information from movie-related queries.
-                        Possible intents:
-                          - movie_info
-                          - showtimes
-                          - cinema_location
-                          - movie_review
-                          - genre_search
-                          - book_tickets
+            user_query = event.input
+            
+            # Initialize the OpenAI model and set it in settings
+            llm = OpenAI(model="gpt-4")
+            Settings.llm = llm
 
-                        Return a JSON object with these possible fields (only if mentioned):
-                        - intent
-                        - movie_name
-                        - city
-                        - locality
-                        - cinema_name
-                        - showtime_str
-                        - genre
-                        - time_context
-                        - num_tickets
-                        Examples:
-                    "movies playing in koramangala" ->
-                    {"intent": "showtimes_str", "locality": "koramangala", "time_context": "currently_playing"}
-                    
-                    "theatres in JP Nagar bangalore" ->
-                    {"intent": "cinema_location", "city": "bangalore", "locality": "JP Nagar"}
-                    
-                    "showtimes for singham again in indiranagar" ->
-                    {"intent": "showtimes_str", "movie_name": "singham again", "locality": "indiranagar"}
-                    
-                    "what movies are showing in church street" ->
-                    {"intent": "showtimes_str", "locality": "church street", "time_context": "currently_playing"}
-                    """
-                        
-                    },
-                    {"role": "user", "content": user_query}
-                ]
-            )
+            # Use structured prediction with the prompt template and pass user_query as a kwarg
+            parsed_query = llm.structured_predict(MovieIntent, prompt_template, user_query=user_query)
             
-            parsed_query = json.loads(response.choices[0].message.content)
-            logging.info(f"Parsed query: {parsed_query}")
-            
-            intent = parsed_query.get("intent")
+            # Process the response based on intent
+            intent = parsed_query.intent
             if intent == "movie_review":
-                return MovieReviewEvent(input=json.dumps(parsed_query))
+                return MovieReviewEvent(input=parsed_query.json())
             elif intent == "showtimes":
-                return ShowtimesEvent(input=json.dumps(parsed_query))
+                return ShowtimesEvent(input=parsed_query.json())
             elif intent == "cinema_location":
-                return CinemaLocationEvent(input=json.dumps(parsed_query))
+                return CinemaLocationEvent(input=parsed_query.json())
             elif intent == "book_tickets":
-                return BookTicketsEvent(input=json.dumps(parsed_query))
+                return BookTicketsEvent(input=parsed_query.json())
             else:
                 # Default fallback: Query LlamaIndex
                 results = query_engine.query(user_query)
@@ -134,7 +106,7 @@ class ChatbotWorkflow(Workflow):
                 
         except Exception as e:
             logging.error(f"Error processing query: {e}")
-            return StopEvent("I encountered an error understanding your query. Could you rephrase it?")
+            return StopEvent("Sorry, something went wrong on our end. Please try again.")
 
     @step
     async def handle_movie_review(self, event: MovieReviewEvent) -> StopEvent:
@@ -180,9 +152,7 @@ class ChatbotWorkflow(Workflow):
         locality = parsed_query.get("locality")
         
         # Query LlamaIndex for showtimes
-        query = f"Show me showtimes for {movie_name or 'movies'}"
-        if locality:
-            query += f" in {locality}"
+        query = f"Show me showtimes for {movie_name or 'movies'} in {locality or 'your area'}"
         results = query_engine.query(query)
         return StopEvent(str(results))
 
