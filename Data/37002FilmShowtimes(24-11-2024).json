@@ -1,0 +1,543 @@
+{
+    "film": {
+        "film_id": 370002,
+        "imdb_id": 26932223,
+        "imdb_title_id": "tt26932223",
+        "film_name": "Bhool Bhulaiyaa 3",
+        "other_titles": {
+            "HI": "??? ?????? 3"
+        },
+        "version_type": "Standard",
+        "age_rating": [
+            {
+                "rating": "U/A ",
+                "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+                "age_advisory": ""
+            }
+        ],
+        "images": {
+            "poster": {
+                "1": {
+                    "image_orientation": "portrait",
+                    "region": "IN",
+                    "medium": {
+                        "film_image": "https://image.movieglu.com/370002/IND_370002h0.jpg",
+                        "width": 240,
+                        "height": 300
+                    }
+                }
+            }
+        }
+    },
+    "cinemas": [
+        {
+            "cinema_id": 34746,
+            "cinema_name": "PVR Orion Mall",
+            "distance": 2.8590008646571,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "22:20",
+                            "end_time": "01:23"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 53377,
+            "cinema_name": "PVR Global Mall Mysore Road Bengaluru",
+            "distance": 3.1305905056155,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "18:55",
+                            "end_time": "21:58"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 53737,
+            "cinema_name": "PVR Director's cut Forum REX WALK Bengaluru",
+            "distance": 3.1557297938389,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "22:15",
+                            "end_time": "01:18"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 24322,
+            "cinema_name": "PVR Forum Mall Koramangala",
+            "distance": 4.2272578340279,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "10:00",
+                            "end_time": "13:03"
+                        },
+                        {
+                            "start_time": "12:20",
+                            "end_time": "15:23"
+                        },
+                        {
+                            "start_time": "21:45",
+                            "end_time": "00:48"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 44695,
+            "cinema_name": "Cinépolis - Orion East Mall - Banaswadi",
+            "distance": 5.4319824996464,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1698-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "13:00",
+                            "end_time": "16:03"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 53379,
+            "cinema_name": "PVR Superplex Forum Mall Kanakpura Road",
+            "distance": 5.6069939412136,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "09:45",
+                            "end_time": "12:48"
+                        },
+                        {
+                            "start_time": "12:05",
+                            "end_time": "15:08"
+                        },
+                        {
+                            "start_time": "18:55",
+                            "end_time": "21:58"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 53125,
+            "cinema_name": "Cinépolis - Sjr Spectrum",
+            "distance": 5.9975100266643,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1698-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "16:25",
+                            "end_time": "19:28"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 41170,
+            "cinema_name": "PVR Elements",
+            "distance": 6.8320091997376,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "22:15",
+                            "end_time": "01:18"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 25538,
+            "cinema_name": "Cinépolis - Bengaluru / Bannerghatta Road",
+            "distance": 6.9324258896314,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1698-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "09:45",
+                            "end_time": "12:48"
+                        },
+                        {
+                            "start_time": "16:15",
+                            "end_time": "19:18"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 31393,
+            "cinema_name": "PVR Soul Spirit Bellandur",
+            "distance": 8.3184418039639,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "15:30",
+                            "end_time": "18:33"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 48590,
+            "cinema_name": "INOX RMZ Galleria Mall",
+            "distance": 8.8949083883279,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1710-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "15:10",
+                            "end_time": "18:13"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 24281,
+            "cinema_name": "Innovative Multiplex",
+            "distance": 9.4754584527242,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-0-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "12:00",
+                            "end_time": "15:03"
+                        },
+                        {
+                            "start_time": "15:15",
+                            "end_time": "18:18"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 53736,
+            "cinema_name": "PVR Bhartiya Mall Of Bengaluru",
+            "distance": 9.6451720191934,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "16:20",
+                            "end_time": "19:23"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 48430,
+            "cinema_name": "Cinépolis Forum Shantiniketan",
+            "distance": 11.387525924188,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1698-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "12:50",
+                            "end_time": "15:53"
+                        },
+                        {
+                            "start_time": "19:25",
+                            "end_time": "22:28"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 50150,
+            "cinema_name": "PVR VR Chennai Anna Nagar",
+            "distance": 177.54317806612,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "22:10",
+                            "end_time": "01:13"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 29972,
+            "cinema_name": "PVR Palazzo The Nexus Vijaya Mall",
+            "distance": 178.47252395986,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "16:20",
+                            "end_time": "19:23"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 29971,
+            "cinema_name": "INOX Luxe Phoenix Market City, Velachery",
+            "distance": 178.85228445762,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1710-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "21:20",
+                            "end_time": "00:23"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 24489,
+            "cinema_name": "PVR Ampa Chennai",
+            "distance": 179.29661657949,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "18:00",
+                            "end_time": "21:03"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 53731,
+            "cinema_name": "PVR Sathyam Royapettah Chennai",
+            "distance": 181.73309157587,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "12:10",
+                            "end_time": "15:13"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 53730,
+            "cinema_name": "PVR Escape-Express Avenue Mall",
+            "distance": 182.13702035384,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "18:15",
+                            "end_time": "21:18"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 42346,
+            "cinema_name": "Baranika Theatre Kumbakonam",
+            "distance": 185.38781168299,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-0-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "09:00",
+                            "end_time": "12:03"
+                        },
+                        {
+                            "start_time": "14:00",
+                            "end_time": "17:03"
+                        },
+                        {
+                            "start_time": "22:15",
+                            "end_time": "01:18"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 25215,
+            "cinema_name": "INOX Osia A Wing Margao",
+            "distance": 289.62079761756,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1710-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "09:35",
+                            "end_time": "12:38"
+                        },
+                        {
+                            "start_time": "22:30",
+                            "end_time": "01:33"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 44692,
+            "cinema_name": "Cinépolis - Mantra Mall",
+            "distance": 308.03099001643,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1698-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "10:50",
+                            "end_time": "13:53"
+                        },
+                        {
+                            "start_time": "19:55",
+                            "end_time": "22:58"
+                        },
+                        {
+                            "start_time": "23:05",
+                            "end_time": "02:08"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 50158,
+            "cinema_name": "PVR Irrum Manzil Hyderabad",
+            "distance": 313.27694542739,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "13:45",
+                            "end_time": "16:48"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "cinema_id": 24856,
+            "cinema_name": "PVR Panjagutta Hyderabad",
+            "distance": 313.70344696226,
+            "logo_url": "https://assets.movieglu.com/chain_logos/in/UK-1718-sq.jpg",
+            "showings": {
+                "Standard": {
+                    "film_id": 370002,
+                    "film_name": "Bhool Bhulaiyaa 3",
+                    "times": [
+                        {
+                            "start_time": "16:50",
+                            "end_time": "19:53"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "status": {
+        "count": 25,
+        "state": "OK",
+        "method": "filmShowTimes",
+        "message": null,
+        "request_method": "GET",
+        "version": "TEST_104v200",
+        "territory": "IN",
+        "device_datetime_sent": "2024-11-22T08:33:24.149Z",
+        "device_datetime_used": "2024-11-22 08:33:24"
+    }
+}

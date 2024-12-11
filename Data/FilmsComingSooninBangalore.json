@@ -1,0 +1,508 @@
+{
+    "films": [
+        {
+            "film_id": 370649,
+            "imdb_id": 10579986,
+            "imdb_title_id": "tt10579986",
+            "film_name": "Mom's Coming",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-24",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/370649/IND_370649h0.jpg",
+                            "width": 203,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 378723,
+            "imdb_id": 31924094,
+            "imdb_title_id": "tt31924094",
+            "film_name": "Gajaana",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/378723/IND_378723h0.jpg",
+                            "width": 192,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 380069,
+            "imdb_id": null,
+            "imdb_title_id": null,
+            "film_name": "Goonch Je Vagar Ganthe Ukali Gai!",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": []
+            }
+        },
+        {
+            "film_id": 360332,
+            "imdb_id": 31240408,
+            "imdb_title_id": "tt31240408",
+            "film_name": "Jahankilla",
+            "other_titles": {
+                "PN": "Jahankilla"
+            },
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "U/A ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "Shinda, a young man from a modest background, joins the police force inspired by the sacrifices made by his family.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/360332/IND_360332h0.jpg",
+                            "width": 209,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 378951,
+            "imdb_id": 27655999,
+            "imdb_title_id": "tt27655999",
+            "film_name": "Luck",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "U/A ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/378951/IND_378951h0.jpg",
+                            "width": 214,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 380501,
+            "imdb_id": null,
+            "imdb_title_id": null,
+            "film_name": "Mega Star Fan",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "U/A ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": []
+            }
+        },
+        {
+            "film_id": 379516,
+            "imdb_id": 34356372,
+            "imdb_title_id": "tt34356372",
+            "film_name": "Miya Biwi Raazi Ki Karange Paaji",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": []
+            }
+        },
+        {
+            "film_id": 356955,
+            "imdb_id": 13622970,
+            "imdb_title_id": "tt13622970",
+            "film_name": "Moana 2",
+            "other_titles": {
+                "HA": "Moana 2"
+            },
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/356955_high.mp4",
+            "synopsis_long": "Walt Disney Animation Studios' epic animated musical \"Moana 2\" reunites Moana (voice of Auli'i Cravalho) and Maui (voice of Dwayne Johnson) three years later for an expansive new voyage alongside a crew of unlikely seafarers. After receiving an unexpected call from her wayfinding ancestors, Moana must journey to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she's ever faced.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/356955/IND_356955h0.jpg",
+                            "width": 247,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/356955/356955h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 374206,
+            "imdb_id": 32525026,
+            "imdb_title_id": "tt32525026",
+            "film_name": "Naale Rajaa Koli Majaa",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/374206/IND_374206h0.jpg",
+                            "width": 240,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 378530,
+            "imdb_id": null,
+            "imdb_title_id": null,
+            "film_name": "Rukhwat",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": []
+            }
+        },
+        {
+            "film_id": 380506,
+            "imdb_id": 27179695,
+            "imdb_title_id": "tt27179695",
+            "film_name": "Sorgavaasal",
+            "other_titles": {
+                "TA": "Sorgavaasal"
+            },
+            "release_dates": [
+                {
+                    "release_date": "2024-11-29",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/380506/IND_380506h0.jpg",
+                            "width": 240,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 360200,
+            "imdb_id": 16539454,
+            "imdb_title_id": "tt16539454",
+            "film_name": "Pushpa 2: The Rule",
+            "other_titles": {
+                "BE": "Pushpa: The Rule - Part 2"
+            },
+            "release_dates": [
+                {
+                    "release_date": "2024-12-05",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "U/A ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/360200/IND_360200h0.jpg",
+                            "width": 194,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 372679,
+            "imdb_id": 27922706,
+            "imdb_title_id": "tt27922706",
+            "film_name": "Chhaava",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-12-06",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/372679/IND_372679h0.jpg",
+                            "width": 240,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 376188,
+            "imdb_id": 33504364,
+            "imdb_title_id": "tt33504364",
+            "film_name": "Dheera Bhagat Roy",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-12-06",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "U/A ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "IN",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/376188/IND_376188h0.jpg",
+                            "width": 225,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 366522,
+            "imdb_id": 27611286,
+            "imdb_title_id": "tt27611286",
+            "film_name": "Mahaparinirvan",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2024-12-06",
+                    "notes": "IND"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "",
+            "images": {
+                "poster": []
+            }
+        }
+    ],
+    "status": {
+        "count": 15,
+        "state": "OK",
+        "method": "filmsComingSoon",
+        "message": null,
+        "request_method": "GET",
+        "version": "TEST_104v200",
+        "territory": "IN",
+        "device_datetime_sent": "2024-11-22T08:33:24.149Z",
+        "device_datetime_used": "2024-11-22 08:33:24"
+    }
+}

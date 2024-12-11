@@ -1,0 +1,946 @@
+{
+  "films": [
+    {
+      "film_id": 370002,
+      "imdb_id": 26932223,
+      "imdb_title_id": "tt26932223",
+      "film_name": "Bhool Bhulaiyaa 3",
+      "other_titles": {
+        "HI": "??? ?????? 3"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-01",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "In the lively city of Kolkata, Ruhaan, a clairvoyant with a knack for exorcisms, is actually a cunning fraudster. If anything goes wrong during the act, he hides his incompetence by blaming nonexistent ghosts. When Princess Meera seeks his help to rid her family's castle of a notorious spirit, Ruhaan smells an opportunity for profit. However, as he delves into the castle's dark history, things take a bizarre turn. With the help of a restoration specialist, Ruhaan uncovers a diabolical scheme orchestrated by three mischievous priests. But just as they think they've cracked the case, the real horror emerges from the shadows.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/370002/IND_370002h0.jpg",
+              "width": 240,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 368709,
+      "imdb_id": 22036406,
+      "imdb_title_id": "tt22036406",
+      "film_name": "Kanguva",
+      "other_titles": {
+        "TE": "??????"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-14",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "A warrior in the 1678 dies due to a disease, in the present a girl does research on that same illness.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/368709/IND_368709h0.jpg",
+              "width": 192,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 365961,
+      "imdb_id": 11976134,
+      "imdb_title_id": "tt11976134",
+      "film_name": "Singham Again",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-01",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "In the third installment of Singham series, the valiant cop Bajirao Singham and his team of brave hearts embark on a cross-border mission to rescue his beloved wife, Avni Singham, who has been abducted by a formidable antagonist. Upholding its legacy of never letting you down-never has, never will-this installment promises a fierce battle between good and evil.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/365961/IND_365961h0.jpg",
+              "width": 214,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 365968,
+      "imdb_id": 27118357,
+      "imdb_title_id": "tt27118357",
+      "film_name": "Amaran",
+      "other_titles": {
+        "TA": "?????"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-10-31",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Amaran is the true-life story of Major Mukund Varadarajan (Sivakarthikeyan), a commissioned officer in the Indian Army`s Rajput Regiment, who was posthumously awarded the Ashok Chakra for his valor during a counterterrorism operation while on deputation to the 44th Rashtriya Rifles battalion in Jammu and Kashmir.Besides being a tale of courage, it portrays the selfless love of his wife, Indhu Rebecaa Varghese (Sai Pallavi). The supporting cast includes Bhuvan Arora, Rahul Bose, and Rohman Shawl, all contributing to this real-life story that deserves to be told and shared in the annals of history. From the well-known house of Raaj Kamal Films International and Sony Pictures Films India, Director Rajkumar Periasamy has deftly woven the threads of this story with reality, allowing the audience to relate to the daily trials and tribulations our brave soldiers face, which many of us tend to take for granted.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/365968/IND_365968h0.jpg",
+              "width": 225,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 360479,
+      "imdb_id": 30889755,
+      "imdb_title_id": "tt30889755",
+      "film_name": "The Sabarmati Report",
+      "other_titles": {
+        "HI": "The Sabarmati Report"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-15",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": "https://trailer.movieglu.com/360479_high.mp4",
+      "synopsis_long": "On February 27, 2002, India bore witness to a horrific event that forever altered its social fabric and history forever. Bogie S-6 of the Sabarmati Express, carrying many 'Karsewaks', was engulfed in flames by a frenzied mob in Godhra, Gujarat.Amidst the turmoil of that fateful day, Samar Kumar, a young film journalist, found himself dispatched to Godhra's ground zero. He tries to expose the truth, but didn't know that he is going to upset a few powerful people who sit quietly in shadows while actually pulling the strings of the puppet.A few years later, Amrita, a young journalist chances upon Samar's report, a stark contrast to the widely accepted narrative. Let's embark on this thrilling expedition as Samar and Amrita navigate the intricate web of journalism, ethics, and the relentless pursuit of truth amidst formidable threats.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/360479/IND_360479h0.jpg",
+              "width": 240,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 370524,
+      "imdb_id": 27191250,
+      "imdb_title_id": "tt27191250",
+      "film_name": "Mechanic Rocky",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-10-31",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/370524/IND_370524h0.jpg",
+              "width": 212,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 360617,
+      "imdb_id": 9218128,
+      "imdb_title_id": "tt9218128",
+      "film_name": "Gladiator II",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-15",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": "https://trailer.movieglu.com/360617_high.mp4",
+      "synopsis_long": "From legendary director Ridley Scott, Gladiator II continues the epic saga of power, intrigue, and vengeance set in Ancient Rome. Years after witnessing the death of revered hero Maximus at the hands of his uncle, Lucius (Paul Mescal) is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist. With rage in his heart and the future of the Empire at stake, Lucius must look to his past to find strength and honor to return the glory of Rome to its people.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/360617/IND_360617h0.jpg",
+              "width": 227,
+              "height": 300
+            }
+          }
+        },
+        "still": {
+          "1": {
+            "image_orientation": "landscape",
+            "medium": {
+              "film_image": "https://image.movieglu.com/360617/360617h2.jpg",
+              "width": 300,
+              "height": 201
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 356870,
+      "imdb_id": 27540542,
+      "imdb_title_id": "tt27540542",
+      "film_name": "Lucky Baskhar (Telugu)",
+      "other_titles": {
+        "BE": "Lucky Baskhar"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-10-31",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "A cash-strapped cashier working at a bank embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering in this slow-burn Telugu-language period crime thriller.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/356870/IND_356870h0.jpg",
+              "width": 192,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 378384,
+      "imdb_id": 27866861,
+      "imdb_title_id": "tt27866861",
+      "film_name": "I Want to Talk",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-22",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "'Sometimes life gives us a second chance,' and for Arjun settled in the USA in pursuit of 'The American Dream', it's an opportunity to rediscover and embrace the precious bond he shares with his daughter. Shoojit Sircar crafts an intrinsically emotional journey with an entertaining narrative through this story about a father and daughter while they navigate through life's surprises. The film compels us to discover the true value of life's fleeting moments, learning to cherish each one. This heartwarming tale is a 'celebration of life' in its everyday ordinary chaos.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/378384/IND_378384h0.jpg",
+              "width": 214,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 366186,
+      "imdb_id": 26637593,
+      "imdb_title_id": "tt26637593",
+      "film_name": "Devaki Nandana Vasudeva",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-14",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Driven by selfish ambition and astrological fears, Kamsaraja relentlessly torments his sister's family, convinced that their suffering is crucial for his child's safety. Imprisoned, he stands resolute against Krishna in an epic clash of good versus evil.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/366186/IND_366186h0.jpg",
+              "width": 200,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 360823,
+      "imdb_id": 15056920,
+      "imdb_title_id": "tt15056920",
+      "film_name": "Bhairathi Ranagal",
+      "other_titles": {
+        "KA": "????? ?????"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-15",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Young Bhairathi Ranagal fights for his village's water but ends up in jail. After earning a law degree, he seeks justice, only to be opposed by industrialist Parande.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/360823/IND_360823h0.jpg",
+              "width": 208,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 375396,
+      "imdb_id": 27757690,
+      "imdb_title_id": "tt27757690",
+      "film_name": "Zebra",
+      "other_titles": {
+        "KA": "Zebra"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-22",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Zebra unravels a gripping tale of love and sacrifice, as characters tread the fine line between right and wrong in their quest for survival.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/375396/IND_375396h0.jpg",
+              "width": 200,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 42798,
+      "imdb_id": 347304,
+      "imdb_title_id": "tt0347304",
+      "film_name": "Tomorrow May Not Be (Kal Ho Naa Ho)",
+      "other_titles": {
+        "KO": "Tomorrow May Not Be (Kal Ho Naa Ho)"
+      },
+      "release_dates": [
+        {
+          "release_date": "2003-03-10",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/42798/IND_042798h0.jpg",
+              "width": 214,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 378894,
+      "imdb_id": 13562602,
+      "imdb_title_id": "tt13562602",
+      "film_name": "Naam",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-22",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/378894/IND_378894h0.jpg",
+              "width": 229,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 378380,
+      "imdb_id": 32495687,
+      "imdb_title_id": "tt32495687",
+      "film_name": "Sookshma Darshini",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-22",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Manual moves with his mother back to their old house in a middle-class community, where he meticulously plans to commit a secret crime. Priyadarshini, a keen observant neighbor, becomes suspicious of Manual's demeanour and activities. Using her clairvoyant skills and the help of her friends, Priyadarshini launches an investigation that uncovers Manual's deeds.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/378380/IND_378380h0.jpg",
+              "width": 214,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 370241,
+      "imdb_id": 32887285,
+      "imdb_title_id": "tt32887285",
+      "film_name": "KA",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-10-31",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "In \"KA,\" a man's interrogation reveals the grim secret behind the abduction of young women.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/370241/IND_370241h0.jpg",
+              "width": 204,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 375400,
+      "imdb_id": 22330520,
+      "imdb_title_id": "tt22330520",
+      "film_name": "Raduaa Returns",
+      "other_titles": {
+        "PN": "Raduaa Returns"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-22",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Raduaa Returns follows Nav, Sukhi, HCL, and Jasmine as they time travel 1300 years, from 1955 to 2255. However, things take a turn when they mistakenly land in different time periods and experience historical incidents. Will they manage to escape?",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "global",
+            "medium": {
+              "film_image": "https://image.movieglu.com/375400/375400h1.jpg",
+              "width": 200,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 358246,
+      "imdb_id": 16366836,
+      "imdb_title_id": "tt16366836",
+      "film_name": "Venom: The Last Dance",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-10-25",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": "https://trailer.movieglu.com/358246_high.mp4",
+      "synopsis_long": "Tom Hardy returns as Venom, one of Marvel's greatest and most complex characters, for thefinal film in the trilogy. Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/358246/IND_358246h0.jpg",
+              "width": 241,
+              "height": 300
+            }
+          }
+        },
+        "still": {
+          "1": {
+            "image_orientation": "landscape",
+            "medium": {
+              "film_image": "https://image.movieglu.com/358246/358246h2.jpg",
+              "width": 300,
+              "height": 199
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 377510,
+      "imdb_id": 33044935,
+      "imdb_title_id": "tt33044935",
+      "film_name": "Sector 17",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-15",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Pargat seeks revenge on Tundilaat, who murdered his father, Gurdit Singh, and stole their land. With help from his love, Rani, and her aunt, Balviro Chachi, Pargat takes down Tundilaat`s empire, restoring his family`s honour and avenging his father`s death.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/377510/IND_377510h0.jpg",
+              "width": 240,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 376962,
+      "imdb_id": 31702438,
+      "imdb_title_id": "tt31702438",
+      "film_name": "Hello Mummy",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-21",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/376962/IND_376962h0.jpg",
+              "width": 200,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 368683,
+      "imdb_id": 28258888,
+      "imdb_title_id": "tt28258888",
+      "film_name": "Matka",
+      "other_titles": {
+        "TE": "?????"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-14",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U/A ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u/a.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "Set between the years 1958 and 1982, based on the Matka gambling scams that rocked the country in the 20th century.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/368683/IND_368683h0.jpg",
+              "width": 240,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 379462,
+      "imdb_id": 31790689,
+      "imdb_title_id": "tt31790689",
+      "film_name": "Emakku Thozhil Romance",
+      "other_titles": {
+        "TA": "?????? ?????? ????????"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-15",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/379462/IND_379462h0.jpg",
+              "width": 225,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 378528,
+      "imdb_id": 32166678,
+      "imdb_title_id": "tt32166678",
+      "film_name": "Dharmarakshak Mahaveer Chhatrapati Sambhaji Maharaj",
+      "other_titles": null,
+      "release_dates": [
+        {
+          "release_date": "2024-11-22",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/378528/IND_378528h0.jpg",
+              "width": 240,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 379964,
+      "imdb_id": null,
+      "imdb_title_id": null,
+      "film_name": "Nirangal Moondru",
+      "other_titles": {
+        "TA": "Nirangal Moondru"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-11-22",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "0 ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/uc.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": null,
+      "synopsis_long": "",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/379964/IND_379964h0.jpg",
+              "width": 211,
+              "height": 300
+            }
+          }
+        }
+      }
+    },
+    {
+      "film_id": 355449,
+      "imdb_id": 29623480,
+      "imdb_title_id": "tt29623480",
+      "film_name": "The Wild Robot",
+      "other_titles": {
+        "GU": "The Wild Robot"
+      },
+      "release_dates": [
+        {
+          "release_date": "2024-10-18",
+          "notes": "IND"
+        }
+      ],
+      "age_rating": [
+        {
+          "rating": "U ",
+          "age_rating_image": "https://assets.movieglu.com/age_rating_logos/in/u.png",
+          "age_advisory": ""
+        }
+      ],
+      "film_trailer": "https://trailer.movieglu.com/355449_high.mp4",
+      "synopsis_long": "The epic adventure follows the journey of a robot -ROZZUM unit 7134, \"Roz\" for short - that is shipwrecked on an uninhabited island and must learn to adapt to the harsh surroundings, gradually building relationships with the animals on the island and becoming the adoptive parent of an orphaned gosling.",
+      "images": {
+        "poster": {
+          "1": {
+            "image_orientation": "portrait",
+            "region": "IN",
+            "medium": {
+              "film_image": "https://image.movieglu.com/355449/IND_355449h0.jpg",
+              "width": 202,
+              "height": 300
+            }
+          }
+        },
+        "still": {
+          "1": {
+            "image_orientation": "landscape",
+            "medium": {
+              "film_image": "https://image.movieglu.com/355449/355449h2.jpg",
+              "width": 300,
+              "height": 199
+            }
+          }
+        }
+      }
+    }
+  ],
+  "status": {
+    "count": 25,
+    "state": "OK",
+    "method": "filmsNowShowing",
+    "message": null,
+    "request_method": "GET",
+    "version": "TEST_104v200",
+    "territory": "IN",
+    "device_datetime_sent": "2024-11-22T08:33:24.149Z",
+    "device_datetime_used": "2024-11-22 08:33:24"
+  }
+}
