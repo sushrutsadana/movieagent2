@@ -14,25 +14,24 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def create_local_index():
-    """Create index from local files in the Data directory."""
-    # Initialize OpenAI LLM
+    """Create index from showtimes sample data CSV."""
     Settings.llm = OpenAI(model="gpt-4-turbo", api_key=OPENAI_API_KEY)
     
-    # Get the path to the Data directory
-    data_dir = Path("Data")
+    # Get the path to the CSV file
+    data_file = Path("Data/showtimessampledata.csv")
     
-    if not data_dir.exists():
-        raise FileNotFoundError("Data directory not found")
+    if not data_file.exists():
+        raise FileNotFoundError("Showtime sample data CSV file not found")
     
-    # Load documents from the Data directory
+    # Load only the CSV file
     documents = SimpleDirectoryReader(
-        input_dir=str(data_dir)
+        input_files=[str(data_file)]
     ).load_data()
     
     # Build the index
     local_index = VectorStoreIndex.from_documents(documents)
     
-    # Save the index directly to movie_index directory
+    # Save the index
     local_index.storage_context.persist(persist_dir="movie_index")
     print("Index saved successfully to ./movie_index")
     return local_index

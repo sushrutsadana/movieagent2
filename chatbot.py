@@ -2,7 +2,6 @@ import os
 import openai
 from dotenv import load_dotenv
 from omdb_integration import fetch_movie_details
-from booking_integration import book_tickets, get_showtime_record
 from llama_index.llms.openai import OpenAI
 from llama_index.core import Settings, PromptTemplate
 from llama_index.core.retrievers import VectorIndexRetriever
@@ -19,6 +18,8 @@ from llama_index_builder import load_index_from_disk
 import logging
 import json
 from typing import Union, Optional
+import csv
+from booking_integration import book_tickets
 
 # Define your Pydantic model for structured output
 class MovieIntent(BaseModel):
@@ -61,12 +62,24 @@ template_str = """
 You are an AI assistant that extracts movie-related intents and details from user queries.
 
 Your task:
-- Read the user query.
-- Determine the 'intent' (one of: movie_review, showtimes, cinema_location, book_tickets, or unknown).
-- If the intent is movie_review, try to identify 'movie_name'.
-- If the intent is showtimes or cinema_location or book_tickets, try to identify 'movie_name', 'city', 'locality', 'cinema_name', 'showtime_str', 'genre', 'time_context', and 'num_tickets' as applicable.
-- If a field is not applicable or not provided, leave it as null.
-- Return the result as a JSON object strictly matching the MovieIntent schema. Do not include extra fields.
+- Read the user query carefully.
+- For booking requests, extract ALL of these fields:
+  * intent: "book_tickets"
+  * movie_name: The exact movie title
+  * cinema_name: The exact theater name
+  * showtime_str: The date and time in format "YYYY-MM-DD,HH:MM"
+  * num_tickets: Number of tickets requested (default to 1 if not specified)
+
+Example booking query:
+"Book me 3 tickets for The Sabarmati Report at PVR Global Mall on 2024-12-15,15:30"
+Should extract:
+{
+  "intent": "book_tickets",
+  "movie_name": "The Sabarmati Report",
+  "cinema_name": "PVR Global Mall",
+  "showtime_str": "2024-12-15,15:30",
+  "num_tickets": 3
+}
 
 User query: {user_query}
 
@@ -169,25 +182,55 @@ class ChatbotWorkflow(Workflow):
 
     @step
     async def handle_book_tickets(self, event: BookTicketsEvent) -> StopEvent:
-        parsed_query = json.loads(event.input)
-        movie_name = parsed_query.get("movie_name")
-        cinema_name = parsed_query.get("cinema_name")
-        showtime_str = parsed_query.get("showtime_str")
-        num_tickets = parsed_query.get("num_tickets", 1)
-        
-        if not (movie_name and cinema_name and showtime_str):
-            return StopEvent("Please specify the movie, cinema, and showtime.")
-        
-        # Validate and book tickets
-        showtime_record = get_showtime_record(movie_name, cinema_name, showtime_str)
-        if not showtime_record:
-            return StopEvent("Sorry, that showtime is not available.")
-        
-        booking_id, error_msg = book_tickets(movie_name, cinema_name, showtime_str, num_tickets)
-        if error_msg:
-            return StopEvent(f"Error booking tickets: {error_msg}")
-        
-        return StopEvent(f"Booking confirmed! Booking ID: {booking_id}")
+        try:
+            parsed_query = json.loads(event.input)
+            movie_name = parsed_query.get("movie_name")
+            cinema_name = parsed_query.get("cinema_name")
+            showtime_str = parsed_query.get("showtime_str")
+            num_tickets = parsed_query.get("num_tickets", 1)
+            
+            # Add debug logging
+            print(f"Parsed query: {parsed_query}")
+            
+            if not all([movie_name, cinema_name, showtime_str]):
+                missing = []
+                if not movie_name: missing.append("movie name")
+                if not cinema_name: missing.append("cinema location")
+                if not showtime_str: missing.append("showtime")
+                return StopEvent(f"Missing required information: {', '.join(missing)}")
+            
+            # Split date and time
+            date, time = showtime_str.split(',')
+            time = time.strip()
+            
+            # Make the query more specific
+            query = f"""Find the exact showtime where:
+            theater_location is exactly '{cinema_name}' AND
+            movie_name is exactly '{movie_name}' AND
+            date is exactly '{date}' AND
+            time is exactly '{time}'
+            
+            Return only the matching CSV row."""
+            
+            results = query_engine.query(query)
+            
+            # Add debug logging
+            print(f"Query result: {str(results)}")
+            
+            # Process the booking
+            success, message = book_tickets(
+                query_result=str(results),
+                num_tickets=num_tickets
+            )
+            
+            if success:
+                return StopEvent(success)
+            else:
+                return StopEvent(f"Booking failed: {message}")
+            
+        except Exception as e:
+            print(f"Error in handle_book_tickets: {str(e)}")  # Add error logging
+            return StopEvent(f"An error occurred while processing your booking: {str(e)}")
 
 async def chat_with_user(question: str):
     workflow = ChatbotWorkflow()
