@@ -15,3 +15,6 @@ llama-index-readers-file
 anthropic
 logfire
 python-telegram-bot>=20.0
+python-dotenv
+httpx
+python-telegram-bot[job-queue]
