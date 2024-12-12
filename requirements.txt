@@ -11,3 +11,6 @@ python-telegram-bot
 asyncio
 black
 pylint
+llama-index-readers-file
+anthropic
+llama-index-llms-anthropic

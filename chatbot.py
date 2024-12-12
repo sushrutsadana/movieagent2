@@ -20,6 +20,8 @@ import json
 from typing import Union, Optional
 import csv
 from booking_integration import book_tickets
+import logfire
+from datetime import datetime, timedelta
 
 # Define your Pydantic model for structured output
 class MovieIntent(BaseModel):
@@ -32,6 +34,7 @@ class MovieIntent(BaseModel):
     genre: Optional[str] = None
     time_context: Optional[str] = None
     num_tickets: Optional[int] = None
+    language: Optional[str] = None
 
 # Define event types
 class MovieReviewEvent(Event):
@@ -48,7 +51,7 @@ class BookTicketsEvent(Event):
 
 # Load environment variables
 logging.basicConfig(level=logging.INFO)
-
+logfire.configure(send_to_logfire='if-token-present')
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -59,31 +62,40 @@ query_engine = RetrieverQueryEngine(retriever=retriever)
 
 # Define the prompt template for structured prediction
 template_str = """
-You are an AI assistant that extracts movie-related intents and details from user queries.
+You are an AI assistant that helps with movie-related queries.
+
+Current date and time: {current_datetime}
+
+Conversation History:
+{history}
 
 Your task:
-- Read the user query carefully.
-- For booking requests, extract ALL of these fields:
-  * intent: "book_tickets"
-  * movie_name: The exact movie title
-  * cinema_name: The exact theater name
-  * showtime_str: The date and time in format "YYYY-MM-DD,HH:MM"
-  * num_tickets: Number of tickets requested (default to 1 if not specified)
+- Analyze the latest user query: "{query}"
+- Determine the user's intent from these options: movie_review, showtimes, cinema_location, book_tickets
+- For movie reviews, extract the movie name
+- For showtimes:
+  * Extract movie name, locality, and language (if mentioned)
+  * Understand temporal context ONLY from the current query (today, tomorrow, this weekend, next week, etc.)
+  * Consider that weekend means Saturday and Sunday
+  * If no time is explicitly mentioned in current query, assume "today"
+- For cinema locations, extract city and locality
+- For bookings, extract movie name, cinema name, showtime, language, and number of tickets
 
-Example booking query:
-"Book me 3 tickets for The Sabarmati Report at PVR Global Mall on 2024-12-15,15:30"
-Should extract:
+If any data is not available in the current query (EXCEPT time_context), try extracting it from the previous chat history.
+Time context should ONLY be derived from the current query.
+
+Return a JSON that fits this structure:
 {
-  "intent": "book_tickets",
-  "movie_name": "The Sabarmati Report",
-  "cinema_name": "PVR Global Mall",
-  "showtime_str": "2024-12-15,15:30",
-  "num_tickets": 3
+    "intent": "movie_review|showtimes|cinema_location|book_tickets",
+    "movie_name": "movie title if mentioned",
+    "city": "city if mentioned",
+    "locality": "locality if mentioned",
+    "cinema_name": "cinema if mentioned",
+    "showtime_str": "date, time if mentioned",
+    "time_context": "temporal context from CURRENT QUERY ONLY",
+    "num_tickets": "number if mentioned",
+    "language": "movie language if mentioned"
 }
-
-User query: {user_query}
-
-Return a JSON that fits the MovieIntent model.
 """
 
 # Create the PromptTemplate
@@ -93,32 +105,48 @@ class ChatbotWorkflow(Workflow):
     @step
     async def start(self, event: StartEvent) -> Union[StopEvent, MovieReviewEvent, ShowtimesEvent, CinemaLocationEvent, BookTicketsEvent]:
         try:
-            user_query = event.input
+            combined_input = event.input
+            user_query = combined_input.split("\n")[-2].replace("User: ", "").strip()
             
-            # Initialize the OpenAI model and set it in settings
-            llm = OpenAI(model="gpt-4")
+            # Add logging for chat history
+            logging.info("Current Chat History:")
+            logging.info(combined_input)
+            
+            llm = OpenAI(model="gpt-4o-mini")
             Settings.llm = llm
+          
 
-            # Use structured prediction with the prompt template and pass user_query as a kwarg
-            parsed_query = llm.structured_predict(MovieIntent, prompt_template, user_query=user_query)
+            current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
+            # Add logging for structured prediction
+            parsed_query = llm.structured_predict(
+                MovieIntent,
+                prompt_template,
+                query=user_query,
+                history=combined_input,
+                current_datetime=current_datetime
+            )
+            
+            # Log the parsed query - use model_dump() instead of json()
+            logging.info(f"Parsed Query: {parsed_query.model_dump_json(indent=2)}")
             
             # Process the response based on intent
             intent = parsed_query.intent
             if intent == "movie_review":
-                return MovieReviewEvent(input=parsed_query.json())
+                return MovieReviewEvent(input=parsed_query.model_dump_json())
             elif intent == "showtimes":
-                return ShowtimesEvent(input=parsed_query.json())
+                return ShowtimesEvent(input=parsed_query.model_dump_json())
             elif intent == "cinema_location":
-                return CinemaLocationEvent(input=parsed_query.json())
+                return CinemaLocationEvent(input=parsed_query.model_dump_json())
             elif intent == "book_tickets":
-                return BookTicketsEvent(input=parsed_query.json())
+                return BookTicketsEvent(input=parsed_query.model_dump_json())
             else:
                 # Default fallback: Query LlamaIndex
                 results = query_engine.query(user_query)
                 return StopEvent(str(results))
                 
         except Exception as e:
-            logging.error(f"Error processing query: {e}")
+            logging.error(f"Error processing query: {str(e)}")
             return StopEvent("Sorry, something went wrong on our end. Please try again.")
 
     @step
@@ -163,10 +191,66 @@ class ChatbotWorkflow(Workflow):
         parsed_query = json.loads(event.input)
         movie_name = parsed_query.get("movie_name")
         locality = parsed_query.get("locality")
+        time_context = parsed_query.get("time_context", "today")
+        genre = parsed_query.get("genre")
+        language = parsed_query.get("language")
         
-        # Query LlamaIndex for showtimes
-        query = f"Show me showtimes for {movie_name or 'movies'} in {locality or 'your area'}"
+        # Let the LLM construct the appropriate date-based query
+        date_prompt = PromptTemplate("""
+        Given:
+        - Time context: '{time_context}'
+        - Movie: '{movie_name}'
+        - Genre: '{genre}'
+        - Current date: {current_date}
+        
+        Construct a natural query to find showtimes that match these criteria.
+        
+        Examples:
+        - For "today" → show only {current_date} showtimes
+        - For "tomorrow" → show only {tomorrow_date} showtimes
+        - For "this weekend" → show Saturday and Sunday showtimes
+        - For "next week" → show next week's showtimes
+        
+        Return a natural language query that our database would understand.
+        """)
+        
+        current_date = datetime.now()
+        tomorrow_date = (current_date + timedelta(days=1)).strftime("%Y-%m-%d")
+        current_date = current_date.strftime("%Y-%m-%d")
+        
+        date_query = Settings.llm.complete(
+            date_prompt.format(
+                time_context=time_context,
+                movie_name=movie_name or "any movie",
+                genre=genre or "any genre",
+                current_date=current_date,
+                tomorrow_date=tomorrow_date
+            )
+        )
+        
+        # Log for debugging
+        logging.info(f"Time Context: {time_context}")
+        logging.info(f"Movie Name: {movie_name}")
+        logging.info(f"Date Query: {date_query}")
+        
+        # Construct the full query
+        query = f"""Find showtimes where:
+        movie_name is exactly '{movie_name}'
+        AND {date_query}
+        {f"AND location contains '{locality}'" if locality else ''}
+        {f"AND language is '{language}'" if language else ''}
+        
+        Format the response as a clear list of showtimes."""
+        
+        # Log for debugging
+        logging.info(f"Time Context: {time_context}")
+        logging.info(f"Date Query: {date_query}")
+        
         results = query_engine.query(query)
+        
+        if not str(results).strip():
+            return StopEvent(f"No showtimes found for {movie_name} {time_context}.")
+        
         return StopEvent(str(results))
 
     @step
@@ -188,61 +272,112 @@ class ChatbotWorkflow(Workflow):
             cinema_name = parsed_query.get("cinema_name")
             showtime_str = parsed_query.get("showtime_str")
             num_tickets = parsed_query.get("num_tickets", 1)
+            language = parsed_query.get("language")
             
             # Add debug logging
-            print(f"Parsed query: {parsed_query}")
+            logging.info(f"Parsed query: {parsed_query}")
             
-            if not all([movie_name, cinema_name, showtime_str]):
+            if not all([movie_name, cinema_name]):
                 missing = []
                 if not movie_name: missing.append("movie name")
                 if not cinema_name: missing.append("cinema location")
-                if not showtime_str: missing.append("showtime")
                 return StopEvent(f"Missing required information: {', '.join(missing)}")
             
-            # Split date and time
-            date, time = showtime_str.split(',')
-            time = time.strip()
-            
-            # Make the query more specific
-            query = f"""Find the exact showtime where:
+            # First, query all available showtimes
+            query = f"""Find all showtimes where:
             theater_location is exactly '{cinema_name}' AND
-            movie_name is exactly '{movie_name}' AND
-            date is exactly '{date}' AND
-            time is exactly '{time}'
+            movie_name is exactly '{movie_name}'
+            {f"AND language is '{language}'" if language else ''}
             
-            Return only the matching CSV row."""
+            Return all matching showtimes."""
             
             results = query_engine.query(query)
             
-            # Add debug logging
-            print(f"Query result: {str(results)}")
+            # If multiple showtimes exist and specific time not provided
+            if str(results).count('\n') > 1 and not showtime_str:
+                return StopEvent(
+                    f"Multiple showtimes available for {movie_name} at {cinema_name}. "
+                    f"Please specify which showtime you'd like to book:\n{results}"
+                )
             
-            # Process the booking
-            success, message = book_tickets(
-                query_result=str(results),
-                num_tickets=num_tickets
-            )
-            
-            if success:
-                return StopEvent(success)
-            else:
-                return StopEvent(f"Booking failed: {message}")
-            
+            # If specific showtime provided, proceed with booking
+            if showtime_str:
+                # Clean up the showtime string by removing any extra commas
+                date, time = showtime_str.replace(',', '').split(' ')
+                
+                logging.info(f"Searching for showtime: date={date}, time={time}")
+                
+                specific_query = f"""Find the exact showtime where:
+                theater_location is exactly '{cinema_name}' AND
+                movie_name is exactly '{movie_name}' AND
+                date is exactly '{date}' AND
+                time is exactly '{time}'
+                
+                Return only the matching CSV row."""
+                
+                logging.info(f"Booking query: {specific_query}")
+                specific_results = query_engine.query(specific_query)
+                logging.info(f"Booking query results: {specific_results}")
+                
+                booking_result = book_tickets(
+                    query_result=str(specific_results),
+                    num_tickets=num_tickets
+                )
+                
+                if isinstance(booking_result, tuple) and len(booking_result) == 2:
+                    success, message = booking_result
+                    if success:
+                        return StopEvent(success)
+                    else:
+                        return StopEvent(f"Booking failed: {message}")
+                
+            return StopEvent("Please specify which showtime you'd like to book.")
+                
         except Exception as e:
-            print(f"Error in handle_book_tickets: {str(e)}")  # Add error logging
+            logging.error(f"Error in handle_book_tickets: {str(e)}")
             return StopEvent(f"An error occurred while processing your booking: {str(e)}")
 
-async def chat_with_user(question: str):
+async def chat_with_user(question: str, history: list):
     workflow = ChatbotWorkflow()
-    result = await workflow.run(input=question)
+    # Combine history and new question
+    combined_input = "\n".join(history + [f"User: {question}", "Bot:"])
+    result = await workflow.run(input=combined_input)
     return result.output if isinstance(result, StopEvent) else str(result)
 
 if __name__ == "__main__":
     import asyncio
-    print("Chatbot running. Type 'quit' to exit.")
+    welcome_message = """
+🍿 Welcome to PopcornAI! 🎬
+
+I'm your friendly movie assistant, here to help you discover and book movies in Bangalore. You can:
+• Find movie showtimes by date, time, or location
+• Search movies by language, genre, or theater
+• Get movie reviews and details
+• Book tickets for your favorite shows
+
+Some example queries:
+- "Show me English movies playing today"
+- "What are the evening shows for Oppenheimer?"
+- "Tell me about theaters in Indiranagar"
+- "Book 2 tickets for Dune at PVR"
+
+Currently serving Bangalore, with more cities coming soon!
+
+How can I help you today?
+    """
+    print(welcome_message)
+    print("\nType 'quit' to exit.")
+    history = []
+    MAX_HISTORY = 20  # Adjust as needed
     while True:
         user_input = input("\nYou: ")
         if user_input.lower() in ["quit", "exit"]:
             break
-        response = asyncio.run(chat_with_user(user_input))
+        history.append(f"User: {user_input}")
+        if len(history) > MAX_HISTORY:
+            history = history[-MAX_HISTORY:]
+        response = asyncio.run(chat_with_user(user_input, history))
         print(f"Bot: {response}")
+        history.append(f"Bot: {response}")
+        if len(history) > MAX_HISTORY:
+            history = history[-MAX_HISTORY:]

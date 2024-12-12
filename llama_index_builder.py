@@ -15,7 +15,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def create_local_index():
     """Create index from showtimes sample data CSV."""
-    Settings.llm = OpenAI(model="gpt-4-turbo", api_key=OPENAI_API_KEY)
+    Settings.llm = OpenAI(model="gpt-4o-mini", api_key=OPENAI_API_KEY)
     
     # Get the path to the CSV file
     data_file = Path("Data/showtimessampledata.csv")
