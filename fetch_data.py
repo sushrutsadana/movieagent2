@@ -1,3 +1,6 @@
+# NOTE: This file is currently not in use. Keeping for reference.
+
+"""
 import os
 from supabase import create_client
 from datetime import datetime
@@ -13,18 +16,18 @@ def initialize_supabase():
 
 def fetch_movies():
     supabase = initialize_supabase()
-    return supabase.table("movies").select("""
+    return supabase.table("movies").select('''
         id,
         film_name,
         imdb_id,
         imdb_title_id,
         version_type,
         age_rating
-    """).execute().data
+    ''').execute().data
 
 def fetch_cinemas():
     supabase = initialize_supabase()
-    return supabase.table("cinemas").select("""
+    return supabase.table("cinemas").select('''
         id,
         cinema_name,
         address,
@@ -34,7 +37,7 @@ def fetch_cinemas():
         lat,
         lng,
         distance
-    """).execute().data
+    ''').execute().data
 
 def fetch_movie_by_name(movie_name):
     supabase = initialize_supabase()
@@ -45,13 +48,13 @@ def fetch_movie_by_name(movie_name):
 
 def fetch_showtimes_for_movie(film_id=None, date=None, time_filter=None):
     supabase = initialize_supabase()
-    query = supabase.table("Showtimes").select("""
+    query = supabase.table("Showtimes").select('''
         id,
         film_id,
         cinema_id,
         start_time,
         end_time
-    """)
+    ''')
     if film_id:
         query = query.eq("film_id", film_id)
     if date:
@@ -59,3 +62,4 @@ def fetch_showtimes_for_movie(film_id=None, date=None, time_filter=None):
     if time_filter:
         query = query.gte("start_time", time_filter.strftime("%H:%M:%S"))  # Assuming time_filter is a datetime object specifying the time
     return query.execute().data
+"""

@@ -2,12 +2,12 @@ theater_location,address,city,state,movie_name,language,genre,date,time,availabl
 PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action/thriller,2024-12-21,17:30,101
 PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-16,18:15,102
 PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,17:00,123
-PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-15,18:45,147
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-15,18:45,145
 PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,17:15,72
 PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,11:15,60
 PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-19,17:45,146
 PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-12,19:45,114
-PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,19:45,134
+PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,19:45,132
 PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,13:15,134
 PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Gladiator II,English,action,2024-12-21,10:45,58
 PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-18,17:15,124
@@ -46,7 +46,7 @@ PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2
 PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-20,15:00,119
 PVR Koramangala,Nexus Mall,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-20,17:00,142
 PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,11:15,82
-PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-14,17:00,51
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-14,17:00,49
 PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-19,17:30,92
 PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,15:30,145
 PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,17:45,89

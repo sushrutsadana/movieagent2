@@ -20,7 +20,6 @@ import json
 from typing import Union, Optional
 import csv
 from booking_integration import book_tickets
-import logfire
 from datetime import datetime, timedelta
 
 # Define your Pydantic model for structured output
@@ -51,7 +50,6 @@ class BookTicketsEvent(Event):
 
 # Load environment variables
 logging.basicConfig(level=logging.INFO)
-logfire.configure(send_to_logfire='if-token-present')
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -231,6 +229,8 @@ class ChatbotWorkflow(Workflow):
         # Log for debugging
         logging.info(f"Time Context: {time_context}")
         logging.info(f"Movie Name: {movie_name}")
+        logging.info(f"Genre: {genre}")
+        logging.info(f"Language: {language}")
         logging.info(f"Date Query: {date_query}")
         
         # Construct the full query
@@ -239,19 +239,74 @@ class ChatbotWorkflow(Workflow):
         AND {date_query}
         {f"AND location contains '{locality}'" if locality else ''}
         {f"AND language is '{language}'" if language else ''}
+        {f"AND genre is '{genre}'" if genre else ''}
         
-        Format the response as a clear list of showtimes."""
-        
-        # Log for debugging
-        logging.info(f"Time Context: {time_context}")
-        logging.info(f"Date Query: {date_query}")
+        Format the response as a clear list of showtimes with theater name, address, movie, language, genre, date, and time."""
         
         results = query_engine.query(query)
         
         if not str(results).strip():
-            return StopEvent(f"No showtimes found for {movie_name} {time_context}.")
+            return StopEvent(
+                f"No showtimes found for "
+                f"{f'genre {genre}' if genre else ''}"
+                f"{f' in {language}' if language else ''}"
+                f"{' movie ' + movie_name if movie_name else ' movies'} "
+                f"{time_context}."
+            )
         
-        return StopEvent(str(results))
+        # Format the response with better structure
+        formatted_results = []
+        raw_results = str(results).strip().split('\n')
+        
+        # Add a header with search criteria
+        header_parts = []
+        if movie_name:
+            header_parts.append(movie_name)
+        if language:
+            header_parts.append(f"in {language}")
+        if genre:
+            header_parts.append(f"({genre})")
+        
+        header = "Showtimes for " + " ".join(header_parts) if header_parts else "Available Showtimes"
+        formatted_results.append(header)
+        formatted_results.append("-" * len(header))
+        
+        # Group showtimes by theater
+        current_theater = None
+        for line in raw_results:
+            if line.strip():
+                try:
+                    # Split the line and clean each part
+                    parts = [part.strip() for part in line.split(',')]
+                    if len(parts) >= 7:
+                        theater = parts[0]
+                        address = parts[1]
+                        movie = parts[4]  # Movie name is in the 5th position
+                        date = parts[7]   # Date is in the 8th position
+                        time = parts[8]   # Time is in the 9th position
+                        
+                        # If theater changes, add a new theater header
+                        if theater != current_theater:
+                            if current_theater is not None:
+                                formatted_results.append("")
+                            formatted_results.append(f"📍 {theater} - {address}")
+                            current_theater = theater
+                        
+                        # Format the showtime with movie name
+                        formatted_results.append(f"   🎬 {movie} - {date} at {time}")
+                except Exception as e:
+                    logging.error(f"Error parsing line: {line}")
+                    logging.error(f"Error details: {str(e)}")
+                    continue
+        
+        # If no results were formatted, return a message
+        if len(formatted_results) <= 2:  # Only header and separator
+            return StopEvent(f"No showtimes found for {movie_name or 'movies'} {time_context}.")
+        
+        # Log the formatted results for debugging
+        logging.info(f"Formatted Results: {formatted_results}")
+        
+        return StopEvent("\n".join(formatted_results))
 
     @step
     async def handle_cinema_location(self, event: CinemaLocationEvent) -> StopEvent:
@@ -327,7 +382,18 @@ class ChatbotWorkflow(Workflow):
                 if isinstance(booking_result, tuple) and len(booking_result) == 2:
                     success, message = booking_result
                     if success:
-                        return StopEvent(success)
+                        # Generate a random confirmation number
+                        import random
+                        import string
+                        confirmation = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
+                        
+                        return StopEvent(
+                            f"Successfully booked {num_tickets} ticket(s) for {movie_name} "
+                            f"at {cinema_name} for {showtime_str}\n\n"
+                            f"🎟️ Confirmation Number: {confirmation}\n"
+                            f"Please show this confirmation number at the theatre.\n\n"
+                            f"🍿 Enjoy your show!"
+                        )
                     else:
                         return StopEvent(f"Booking failed: {message}")
                 
