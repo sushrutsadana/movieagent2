@@ -5,7 +5,7 @@ llama-index-readers-web
 llama-index-llms-openai
 supabase
 requests
-python-dotenv
+python-telegram-bot
 streamlit
 python-telegram-bot
 asyncio
@@ -13,4 +13,5 @@ black
 pylint
 llama-index-readers-file
 anthropic
-llama-index-llms-anthropic
+logfire
+python-telegram-bot>=20.0
