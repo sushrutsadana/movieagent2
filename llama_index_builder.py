@@ -18,7 +18,7 @@ def create_local_index():
     Settings.llm = OpenAI(model="gpt-4o-mini", api_key=OPENAI_API_KEY)
     
     # Get the path to the CSV file
-    data_file = Path("Data/showtimessampledata.csv")
+    data_file = Path("Data/Showtimessampledata.csv")
     
     if not data_file.exists():
         raise FileNotFoundError("Showtime sample data CSV file not found")
