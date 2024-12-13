@@ -1,0 +1,274 @@
+theater_location,address,city,state,movie_name,language,genre,date,time,available_seats
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action  thriller,2024-12-21,17:30,101
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-16,18:15,102
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,17:00,123
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-15,18:45,147
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,17:15,71
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,11:15,60
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-19,17:45,146
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-12,19:45,114
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,19:45,134
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,13:15,134
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Gladiator II,English,action,2024-12-21,10:45,61
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-18,17:15,124
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-18,16:30,110
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-13,20:30,74
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-21,10:30,56
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-17,17:30,85
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,21:45,64
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-21,14:15,124
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,17:15,66
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-14,20:00,111
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-19,10:15,91
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-17,21:00,106
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Gladiator II,English,action,2024-12-12,21:15,131
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Gladiator II,English,action,2024-12-18,14:15,113
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-21,15:45,115
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-14,16:45,59
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,12:30,93
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-11,11:15,140
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-19,20:15,88
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-17,18:30,117
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-12,20:00,52
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-14,20:45,131
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-13,21:45,96
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-21,16:15,60
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-11,17:45,122
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-19,14:00,65
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,16:30,67
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-18,14:30,146
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action,2024-12-16,10:45,72
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-12,10:30,130
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,12:00,89
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-17,11:15,87
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-12,17:00,111
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-15,22:15,149
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-20,15:00,119
+PVR Koramangala,Nexus Mall Koramangala,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action,2024-12-20,17:00,142
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,11:15,83
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-14,17:00,51
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-19,17:30,92
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,15:30,146
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,17:45,89
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-17,20:45,136
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,21:00,130
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-18,15:30,131
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-12,20:45,86
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-12,10:30,98
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-13,12:30,102
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-18,22:30,100
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-15,19:15,82
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-11,22:15,116
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-19,15:00,117
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-16,22:30,106
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-13,20:15,131
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,10:00,145
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action,2024-12-11,17:30,87
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-16,18:45,115
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-15,15:30,84
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-12,21:30,64
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,12:30,64
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-13,22:15,141
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-11,20:15,59
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-16,20:00,148
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-19,10:15,133
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-18,17:45,113
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-14,13:15,143
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-13,10:15,104
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action/drama,2024-12-14,12:15,82
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action/drama,2024-12-13,17:45,95
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-18,12:15,130
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-17,11:30,135
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action/drama,2024-12-17,18:00,103
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,hindi,action/drama,2024-12-19,21:15,106
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-21,10:45,81
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-21,21:00,119
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,telegu,action/drama,2024-12-19,14:00,58
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-15,14:30,67
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action/drama,2024-12-16,19:00,64
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-16,17:45,68
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-12,13:15,130
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-20,21:00,145
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action/drama,2024-12-12,11:00,148
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action/drama,2024-12-14,17:15,52
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-20,14:45,104
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-11,22:45,148
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action/drama,2024-12-15,16:15,104
+PVR IMAX Whitefield,Phoenix Marketcity  Whitefield,Bangalore,Karnataka,Pushpa 2: The Rule,kannada,action/drama,2024-12-15,19:45,127
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-12,16:15,107
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,comedy,2024-12-12,18:30,93
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Singham Again,hindi,action,2024-12-19,12:30,124
+PVR Global Mall,Mysore Road,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,comedy,2024-12-16,10:30,92
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-12,14:15,112
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-15,20:15,63
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-18,10:30,64
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-12,18:00,78
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-19,12:00,60
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-18,11:30,101
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-14,16:15,121
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-15,18:30,135
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-13,22:00,105
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-16,10:15,83
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-14,20:30,112
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-12,21:30,68
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-15,09:45,98
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-14,17:00,70
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-13,18:30,126
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-17,21:45,105
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,14:15,102
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,10:30,77
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,16:15,112
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-18,17:15,80
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,15:00,92
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-19,16:00,85
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-17,17:15,88
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,20:45,139
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-17,10:30,111
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-13,20:00,77
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,11:30,85
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,10:45,111
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-17,16:00,80
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-18,20:30,128
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-17,11:45,116
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,18:15,81
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-17,17:45,112
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,09:45,126
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-15,11:45,78
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,20:45,64
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-18,11:45,134
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-13,13:30,105
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-15,20:30,82
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-15,15:45,114
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-13,15:15,116
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,12:15,87
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,22:30,129
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-13,10:30,72
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-15,22:00,65
+PVR Orion Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-15,09:30,75
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-12,19:30,65
+Cinepolis Binnypet Mall,Tank Bunk Road,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-13,15:15,92
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-13,16:00,122
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-19,18:45,121
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-13,21:00,120
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-12,14:45,124
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-15,17:30,100
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,21:30,98
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,16:15,67
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,14:45,99
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-17,12:30,87
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,20:15,136
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,10:00,138
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,15:30,128
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,10:45,89
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,19:00,79
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-13,14:30,114
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-19,17:00,119
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,15:15,119
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-13,19:00,104
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,12:15,95
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,21:15,66
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,20:00,67
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-19,20:00,123
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-18,15:15,110
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-16,17:45,116
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-12,20:00,108
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-16,13:30,119
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-17,09:45,128
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-18,18:45,111
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-19,18:30,128
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-12,20:30,65
+INOX Central JP Nagar,JP Nagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-13,20:00,59
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-13,17:30,62
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-16,22:30,69
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-18,19:00,126
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-16,14:30,129
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-16,19:15,62
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-14,15:00,95
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-18,21:30,127
+INOX Nexus Whitefield,Whitefield,Bangalore,Karnataka,Gladiator II,English,action,2024-12-18,16:30,102
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Gladiator II,English,action,2024-12-17,16:00,129
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Gladiator II,English,action,2024-12-14,13:45,136
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Gladiator II,English,action,2024-12-17,18:00,110
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Gladiator II,English,action,2024-12-19,20:45,68
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-12,10:45,77
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-15,15:00,96
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-19,11:00,98
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-18,15:15,108
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-13,20:15,138
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,16:00,63
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,19:00,140
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,13:15,77
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-13,20:45,82
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,13:15,119
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,21:00,67
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,22:00,119
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,21:30,83
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-15,20:45,128
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,12:45,120
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-13,18:45,75
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-14,09:30,77
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-17,22:15,94
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-18,12:45,96
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-16,10:00,124
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-18,11:15,103
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-14,20:30,137
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-14,10:30,125
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-17,16:00,111
+INOX Leisure Mall,Rajajinagar,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-17,20:30,130
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-18,15:45,89
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-15,11:45,115
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-12,16:00,108
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-19,21:30,135
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-15,15:00,83
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-12,18:30,82
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-15,18:00,110
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-14,20:30,65
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Hindi,action/thriller,2024-12-17,13:00,89
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Tamil,action/thriller,2024-12-12,13:30,82
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-13,09:45,66
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Pushpa 2: The Rule,Kannada,action/thriller,2024-12-19,11:30,94
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-16,18:30,89
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-14,16:30,90
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-14,13:00,70
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-14,21:15,100
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-14,13:30,117
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-12,18:00,90
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-15,11:45,103
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Gladiator II,English,action,2024-12-15,10:45,126
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-17,10:15,79
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-19,22:30,73
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,21:15,92
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,19:15,129
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,17:00,135
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-17,15:30,114
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,10:00,80
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,22:15,118
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,16:30,75
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,10:30,110
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-13,11:15,114
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-18,16:00,80
+INOX Garuda Mall,Magrath Road,Bangalore,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,16:45,120
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-13,17:30,110
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-14,20:00,95
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-15,11:00,130
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Bhool Bhulaiyaa 3,Hindi,horror/comedy,2024-12-16,15:00,105
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-12,18:00,140
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-13,21:00,124
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-14,14:30,115
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-15,19:00,100
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Pushpa 2: The Rule,Telugu,action/thriller,2024-12-16,22:00,90
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Gladiator II,English,action,2024-12-12,16:00,150
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Gladiator II,English,action,2024-12-13,19:30,135
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Gladiator II,English,action,2024-12-14,12:00,145
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Gladiator II,English,action,2024-12-15,15:30,125
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Gladiator II,English,action,2024-12-16,20:00,115
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-12,13:00,160
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-13,16:30,145
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-14,19:00,130
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-15,10:30,150
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,The Sabarmati Report,Hindi,drama/thriller,2024-12-16,14:00,140
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-12,16:00,63
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-13,19:00,140
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-14,13:15,77
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-15,20:45,82
+INOX Lido Indiranagar,Indiranagar,Bengaluru,Karnataka,Moana 2,English,animation/comedy/action/adventure,2024-12-16,13:15,119

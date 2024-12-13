@@ -1,0 +1,15 @@
+openai
+llama-index
+llama-index-utils-workflow
+llama-index-readers-web
+llama-index-llms-openai
+requests
+python-dotenv
+streamlit
+python-telegram-bot
+asyncio
+black
+pylint
+llama-index-readers-file
+anthropic
+llama-index-llms-anthropic
