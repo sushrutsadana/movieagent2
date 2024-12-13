@@ -11,4 +11,6 @@ services:
         sync: false
       - key: OMDB_API_KEY
         sync: false
+      - key: WEBHOOK_URL
+        value: https://movieagent2-5.onrender.com
     port: 8080 
