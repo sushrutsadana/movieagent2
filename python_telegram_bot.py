@@ -11,7 +11,12 @@ import asyncio
 import os
 from dotenv import load_dotenv
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Create FastAPI app
 app = FastAPI()
@@ -21,13 +26,27 @@ load_dotenv()
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 PORT = int(os.environ.get("PORT", 8080))
 
+# Get your render.com URL from environment or use localhost for local testing
+WEBHOOK_URL = os.getenv("WEBHOOK_URL", f"https://your-app-name.onrender.com")
+
 # Store chat histories
 chat_histories = {}
 MAX_HISTORY = 20
 
+# Initialize bot application globally
+application = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
+
 @app.get("/")
 async def root():
     return {"status": "Bot is running"}
+
+@app.post(f"/{TELEGRAM_BOT_TOKEN}")
+async def webhook_handler(request: Request):
+    """Handle incoming Telegram updates"""
+    data = await request.json()
+    update = Update.de_json(data, application.bot)
+    await application.process_update(update)
+    return {"ok": True}
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -53,29 +72,35 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         await update.message.reply_text(response)
     except Exception as e:
-        print(f"Error in handle_message: {str(e)}")
+        logger.error(f"Error in handle_message: {str(e)}")
         await update.message.reply_text("Sorry, something went wrong. Please try again later.")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Send a welcome message when the user starts the bot."""
     user_id = update.effective_user.id
-    
-    # Initialize or reset chat history for this user
     chat_histories[user_id] = []
-    
     await update.message.reply_text(WELCOME_MESSAGE)
 
-def main():
-    application = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
+async def setup_webhook():
+    """Setup webhook for the bot"""
+    webhook_url = f"{WEBHOOK_URL}/{TELEGRAM_BOT_TOKEN}"
+    webhook_info = await application.bot.get_webhook_info()
+    
+    # Only set webhook if it's not already set correctly
+    if webhook_info.url != webhook_url:
+        await application.bot.set_webhook(url=webhook_url)
+        logger.info(f"Webhook set to {webhook_url}")
 
+def main():
     # Add command and message handlers
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-    # Start the bot with webhook
-    print(f"Telegram bot is running on port {PORT}...")
-    
+    # Setup webhook
+    asyncio.run(setup_webhook())
+
     # Start FastAPI server
+    logger.info(f"Starting bot on port {PORT}")
     uvicorn.run(app, host="0.0.0.0", port=PORT)
 
 if __name__ == "__main__":
