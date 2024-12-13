@@ -462,12 +462,22 @@ class ChatbotWorkflow(Workflow):
     async def handle_general(self, event: GeneralEvent) -> StopEvent:
         return StopEvent(WELCOME_MESSAGE)
 
-async def chat_with_user(question: str, history: list):
+async def chat_with_user(question: str, history: list = None):
     workflow = ChatbotWorkflow()
+    
+    # Initialize history if None
+    if history is None:
+        history = []
+    
     # Combine history and new question
     combined_input = "\n".join(history + [f"User: {question}", "Bot:"])
-    result = await workflow.run(input=combined_input)
-    return result.output if isinstance(result, StopEvent) else str(result)
+    
+    try:
+        result = await workflow.run(input=combined_input)
+        return result.output if isinstance(result, StopEvent) else str(result)
+    except Exception as e:
+        logging.error(f"Error in chat_with_user: {str(e)}")
+        return "Sorry, something went wrong. Please try again."
 
 if __name__ == "__main__":
     import asyncio

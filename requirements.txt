@@ -1,3 +1,5 @@
+fastapi
+uvicorn
 openai
 llama-index
 llama-index-utils-workflow
