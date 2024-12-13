@@ -1,33 +1,43 @@
 # Environment variables
 .env
-.env.local
-.env.*.local
+
+# Generated indices
+movie_index/
+movie_index.pkl
+movie_index.json
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
 # Virtual Environment
 venv/
-env/
 ENV/
 
 # IDE
-.vscode/
 .idea/
+.vscode/
+*.swp
+*.swo
 
-# Database
-*.db
-*.sqlite3
-
-
-
-# Logs
-*.log
-
-# Local development
+# OS
 .DS_Store
-
-movie_index.pkl
-venv/
+Thumbs.db
